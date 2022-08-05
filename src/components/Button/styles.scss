@@ -1,0 +1,14 @@
+@import '../../variable';
+
+.button {
+  background-color: $btnColor;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  width: 100px;
+
+  &:hover {
+    background-color: $btnSecondColor;
+  }
+}
