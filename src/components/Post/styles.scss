@@ -1,15 +1,24 @@
-@import '../../variable';
+@import "../../variable";
 
 .post {
   margin: 50px 40px;
   border: 2px solid $borderColor;
   padding: 20px 40px;
+  display: flex;
+  flex-flow: row wrap;
 
   &__title {
     color: $titleColor;
+    max-width: 900px;
   }
 
   &__subtitle {
     font-size: larger;
+    max-width: 900px;
+  }
+
+  &__img {
+    max-width: 200px;
+    margin-right: 100px;
   }
 }

@@ -1,1 +1,6 @@
-export const URL = 'https://jsonplaceholder.typicode.com/posts';
+export const URL = "https://fakestoreapi.com/products?limit=";
+
+export const BUTTON_LABEL = {
+  showMore: "Show more",
+  hide: "Hide",
+};

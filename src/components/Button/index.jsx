@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 const ButtonComponent = (props) => {
   const { label, showMore, isShow } = props;
 
+  const btnClass = isShow ? "button button_show" : "button button_hide";
+
   return (
-    <button className='button' onClick={() => showMore(!isShow)}>
+    <button className={btnClass} onClick={() => showMore(!isShow)}>
       {isShow ? label.hide : label.showMore}
     </button>
   );
