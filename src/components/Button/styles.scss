@@ -1,21 +1,22 @@
-@import "../../variable";
+// @import "../../variable";
 
-.button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  width: 100px;
+// .button {
+//   padding: 5px 10px;
+//   border: none;
+//   border-radius: 15px;
+//   cursor: pointer;
+//   width: 150px;
+//   font-size: 20px;
 
-  &_show {
-    background-color: $btnColorShow;
-  }
+//   &_show {
+//     background-color: $btnColorShow;
+//   }
 
-  &_hide {
-    background-color: $btnColorHide;
-  }
+//   &_hide {
+//     background-color: $btnColorHide;
+//   }
 
-  &:hover {
-    background-color: $btnHoverColor;
-  }
-}
+//   &:hover {
+//     background-color: $btnHoverColor;
+//   }
+// }

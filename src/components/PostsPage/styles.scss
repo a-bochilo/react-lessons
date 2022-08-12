@@ -1,20 +1,14 @@
 @import "../../variable";
 
-.button-block {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+// .more-pro-btn {
+//   padding: 10px;
+//   width: 200px;
+//   border: none;
+//   border-radius: 15px;
+//   background-color: $btnColorShow;
 
-.more-pro-btn {
-  padding: 10px;
-  width: 200px;
-  border: none;
-  border-radius: 15px;
-  background-color: $btnColorShow;
-
-  &:hover {
-    background-color: $btnHoverColor;
-    cursor: pointer;
-  }
-}
+//   &:hover {
+//     background-color: $btnHoverColor;
+//     cursor: pointer;
+//   }
+// }

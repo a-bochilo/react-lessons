@@ -1,16 +1,18 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 
 import "./styles.scss";
 
 const ButtonComponent = (props) => {
-  const { label, showMore, isShow } = props;
-
-  const btnClass = isShow ? "button button_show" : "button button_hide";
+  const { label, buttonClick, id, btnStyle } = props;
 
   return (
-    <button className={btnClass} onClick={() => showMore(!isShow)}>
-      {isShow ? label.hide : label.showMore}
-    </button>
+    <Button variant={btnStyle} onClick={() => buttonClick(id)}>
+      {label}
+    </Button>
+    // <button variant="danger" onClick={() => buttonClick(id)}>
+    //   {label}
+    // </button>
   );
 };
 

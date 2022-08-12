@@ -1,11 +1,8 @@
 @import "../../variable";
 
 .post {
-  margin: 50px 40px;
-  border: 2px solid $borderColor;
-  padding: 20px 40px;
-  display: flex;
-  flex-flow: row wrap;
+  box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.3);
+  border-radius: 10px;
 
   &__title {
     color: $titleColor;
@@ -18,7 +15,6 @@
   }
 
   &__img {
-    max-width: 200px;
-    margin-right: 100px;
+    max-width: 100px;
   }
 }
