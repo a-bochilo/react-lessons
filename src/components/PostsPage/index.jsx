@@ -3,6 +3,7 @@ import ButtonComponent from "../Button";
 import InputGroup from "../InputGroup";
 import Loader from "../Loader";
 import Post from "../Post";
+import HeaderComponent from "../HeaderComponent";
 
 import { URL, BUTTON_LABEL } from "./constants";
 
@@ -75,9 +76,6 @@ const PostPage = () => {
 
   return (
     <UserContext.Provider value={themes.light}>
-      {error && <div>{error.message}</div>}
-      {!data && !error && <Loader />}
-
       <div className="container p-3">
         {/* <input ref={bodyInputRef} /> */}
 
@@ -111,6 +109,8 @@ const PostPage = () => {
           btnStyle="danger"
           inputChange={filterProducts}
         />
+        {error && <div>{error.message}</div>}
+        {!data && !error && <Loader />}
         {data &&
           data
             .filter((prod) => prod.title.trim().toLowerCase().includes(query))
